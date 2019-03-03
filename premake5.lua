@@ -26,13 +26,15 @@ project "Hazel"
 
 	includedirs
 	{
+		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include"
 	}
 
 	filter "system:windows"
 		cppdialect "C++17"
 		staticruntime "On"
-		systemversion "8.1"
+		systemversion "latest"
+		toolset "v140"
 
 		defines
 		{
@@ -85,7 +87,8 @@ project "Sandbox"
 	filter "system:windows"
 		cppdialect "C++17"
 		staticruntime "On"
-		systemversion "8.1"
+		systemversion "latest"
+		toolset "v140"
 
 		defines
 		{
