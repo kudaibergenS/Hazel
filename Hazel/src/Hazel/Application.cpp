@@ -1,6 +1,6 @@
 #include "hzpch.h"
 
-#include <GLFW/glfw3.h>
+#include <glad/glad.h>
 
 #include "Application.h"
 #include "Hazel/Log.h"
@@ -33,8 +33,6 @@ namespace Hazel
 	{
 		EventDispatcher dispatcher(e);
 		dispatcher.Dispatch<WindowCloseEvent>(BIND_EVENT_FN(OnWindowClose));
-
-		HZ_CORE_TRACE("{0}", e);
 
 		for (auto it = m_LayerStack.end(); it != m_LayerStack.begin(); )
 		{
