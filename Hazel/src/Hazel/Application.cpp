@@ -4,6 +4,7 @@
 
 #include "Application.h"
 #include "Hazel/Log.h"
+#include "Input.h"
 
 namespace Hazel
 {
